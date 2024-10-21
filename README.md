@@ -92,13 +92,74 @@ pip install -r requirements.txt
 
 | Name                                                                                        |  Email              
 |---------------------------------------------------------------------------------------------|--------------------             
-| [Jana Liebenberg-Fouche](https://github.com/Jana-Liebenberg)                                | jliebenberg-fouche@sandtech.com
-| [Edmund Dotsey](https://github.com/Edotsey)                                                 | edotsey@sandtech.com
-| [Farayi Myambo](https://github.com/Farayi-Explore)                                          | fmyambo@sandtech.com
+| [Thavaagh Pillay](https://github.com/thavaagh)                                | thavaagh@gmail.com
+| [Mikaela Thakur](https://github.com/MikaelaThakur)                                                 | thakur.mikaela@gmail.com
 
 
+## 6. Steps to recreate the enviroment:<a class="anchor" id="team-members"></a>
+
+Steps to Recreate the Environment
+
+Clone the repository:
+
+git clone https://github.com/yourusername/crwp.git
+cd crwp
+
+Create the Conda environment:
+
+Create a new Conda environment with Python (specify the desired version if needed):
+
+conda create --name crwp-env python=3.x
+
+Replace 3.x with the version of Python you need (e.g., 3.8).
+
+Activate the environment:
+
+conda activate crwp-env
+
+Install dependencies:
+
+Install the required packages from the requirements.txt file:
+
+pip install -r requirements.txt
+
+Verify the installation:
+
+Ensure all packages are installed correctly by checking the installed packages:
+
+conda list
+
+Additional Commands
+
+Deactivate the environment:
+
+To deactivate the current environment, use:
+
+conda deactivate
+
+Remove the environment:
+
+If you need to remove the environment:
+
+conda remove --name crwp-env --all
+
+    Replace crwp-env with the name of the environment you want to remove.
+
+Troubleshooting
+
+Common issues:
+
+    If you encounter any issues related to package conflicts, try updating Conda:
+
+    conda update conda
+
+If you still face issues, you can create a new environment from scratch and install the required packages manually.
 
 #### Additional Resources to create a README file:
 - [Make a README](https://www.makeareadme.com/)
 - [GitHub Docs](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)
 - [FreeCodeCamp](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
+This README file provides instructions on how to recreate the Python environment for this project using Anaconda.
+Prerequisites
+
+    Anaconda installed on your system. You can download and install it from Anaconda Distribution.
