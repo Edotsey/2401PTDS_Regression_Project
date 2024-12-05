@@ -35,7 +35,7 @@ The dataset utilized in this project comprises historical data on insurance clai
 ## 3. Repository Structure <a class="anchor" id="packages"></a>
 
 - `data/:` Contains the dataset file.
-- `QCTO---Workplace-Module-Notebook-Template-4571 (1).ipynb Jupyter notebooks used for data exploration, model training, and analysis.
+- `QCTO---Workplace-Module ipynb` Jupyter notebooks used for data exploration, model training, and analysis.
 - `images/:` Images used in the notebook.
 - `README.md:` Project documentation.
 - `requirements.txt:` Files for recreating the project's environment.
