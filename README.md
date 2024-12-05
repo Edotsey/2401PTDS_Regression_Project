@@ -5,7 +5,7 @@
 * [1. Project Overview](#project-description)
 * [2. Dataset](#dataset)
 * [3. Repository Structure](#Repository-Structure)
-* [4. Environment](#environment)
+* [4. Packages](#Packages)
 
 ## 1. Project Overview <a class="anchor" id="project-description"></a>
 In the insurance industry, precise prediction of claim probabilities is vital for effective risk assessment and accurate policy pricing. However, a significant challenge arises from the frequent class imbalance in insurance claims datasets, where non-claim instances vastly outnumber actual claims. This imbalance complicates predictive modeling, leading to biased outcomes that favor the majority class and diminish the performance of models on the minority class. Addressing this issue is crucial for improving the accuracy and reliability of claims predictions, which are essential for better risk management and policy development.
@@ -41,11 +41,14 @@ The dataset utilized in this project comprises historical data on insurance clai
 - `requirements.txt:` Files for recreating the project's environment.
 - `shapefiles/:` Shapefiles that are part of the Natural Earth dataset, used in the project to perform spatial operations for the countries and areas in the dataset.
 
-## 4. Repository Structure <a class="anchor" id="packages"></a>
+## 4. Packages <a class="anchor" id="packages"></a>
 
- To carry out all the objectives for this repo, the following necessary dependencies were loaded:
+To carry out all the objectives for this repo, the following necessary dependencies were loaded:
 + `Pandas 2.2.2` and `Numpy 1.26`
 + `Matplotlib 3.8.4`
++ `Seaborn 0.13.2`
++ `Scikit-learn 1.5.1`
++ `GeoPandas 1.0.1`
 
 ## 5. Environment <a class="anchor" id="environment"></a>
 
