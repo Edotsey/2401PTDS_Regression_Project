@@ -50,7 +50,7 @@ To carry out all the objectives for this repo, the following necessary dependenc
 + `Seaborn 0.13.2`
 + `Scikit-learn 1.5.1`
 + `GeoPandas 1.0.1`
-+ Power BI
++ `Power BI`
 
 ## 5. Environment <a class="anchor" id="environment"></a>
 
