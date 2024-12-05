@@ -7,7 +7,7 @@
 * [3. Repository Structure](#Repository-Structure)
 * [4. Packages](#Packages)
 * [5. Environment](#Environment)
-* 
+  
 ## 1. Project Overview <a class="anchor" id="project-description"></a>
 In the insurance industry, precise prediction of claim probabilities is vital for effective risk assessment and accurate policy pricing. However, a significant challenge arises from the frequent class imbalance in insurance claims datasets, where non-claim instances vastly outnumber actual claims. This imbalance complicates predictive modeling, leading to biased outcomes that favor the majority class and diminish the performance of models on the minority class. Addressing this issue is crucial for improving the accuracy and reliability of claims predictions, which are essential for better risk management and policy development.
 
