@@ -4,7 +4,7 @@
 ## Table of contents
 * [1. Project Overview](#project-description)
 * [2. Dataset](#dataset)
-* [3. Packages](#packages)
+* [3. Repository Structure](#Repository-Structure)
 * [4. Environment](#environment)
 
 ## 1. Project Overview <a class="anchor" id="project-description"></a>
@@ -33,7 +33,7 @@ The dataset utilized in this project comprises historical data on insurance clai
 - claim_status	Indicates whether a claim was made (1) or not (0), which is the dependent variable the model aims to predict.
  
 
-## 3. Packages <a class="anchor" id="packages"></a>
+## 3. Repository Structure <a class="anchor" id="packages"></a>
 
 To carry out all the objectives for this repo, the following necessary dependencies were loaded:
 + `Pandas 2.2.2` and `Numpy 1.26`
