@@ -53,10 +53,11 @@ To carry out all the objectives for this repo, the following necessary dependenc
 
 ## 5. Environment <a class="anchor" id="environment"></a>
 
-+ `activate the virtual environment
-+ `conda activate <regression_project_environment>
-+ `install the pip package
-+ `conda install pip
-+ `install the requirements for this project
-+ `pip install -r requirements.txt
-
+```bash
+# activate the virtual environment
+conda activate <QCTO---Workplace-Module>
+# install the pip package
+conda install pip
+# install the requirements for this project
+pip install -r requirements.txt
+```
