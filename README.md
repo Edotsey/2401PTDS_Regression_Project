@@ -34,7 +34,7 @@ The dataset utilized in this project comprises historical data on insurance clai
 
 ## 3. Repository Structure <a class="anchor" id="packages"></a>
 
-- `data/:` Contains the dataset file.
+- `Insurance claims data.csv:` Contains the dataset file.
 - `QCTO---Workplace-Module ipynb` Jupyter notebooks used for data exploration, model training, and analysis.
 - `images/:` Images used in the notebook.
 - `README.md:` Project documentation.
