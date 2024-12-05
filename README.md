@@ -38,6 +38,13 @@ The dataset utilized in this project comprises historical data on insurance clai
 To carry out all the objectives for this repo, the following necessary dependencies were loaded:
 + `Pandas 2.2.2` and `Numpy 1.26`
 + `Matplotlib 3.8.4`
+- `data/:` Contains the dataset file.
+- `RegressionTeamProject_Notebook.ipynb` Jupyter notebooks used for data exploration, model training, and analysis.
+- `images/:` Images used in the notebook.
+- `README.md:` Project documentation.
+- `requirements.txt:` Files for recreating the project's environment.
+- `shapefiles/:` Shapefiles that are part of the Natural Earth dataset, used in the project to perform spatial operations for the countries and areas in the dataset.
+
  
 
 ## 4. Environment <a class="anchor" id="environment"></a>
