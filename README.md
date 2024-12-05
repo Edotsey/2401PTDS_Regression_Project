@@ -31,13 +31,9 @@ The dataset utilized in this project comprises historical data on insurance clai
 - rear_brakes_type	Type of rear brakes, which could be related to the vehicle’s stopping capability and safety.
 - Various binary indicators (Yes/No) for specific vehicle amenities and safety features	Features like steering_type, turning_radius, length, width, gross_weight, etc., which together build a profile of the - vehicle’s characteristics and its associated risk factors.
 - claim_status	Indicates whether a claim was made (1) or not (0), which is the dependent variable the model aims to predict.
- 
 
 ## 3. Repository Structure <a class="anchor" id="packages"></a>
 
-To carry out all the objectives for this repo, the following necessary dependencies were loaded:
-+ `Pandas 2.2.2` and `Numpy 1.26`
-+ `Matplotlib 3.8.4`
 - `data/:` Contains the dataset file.
 - `RegressionTeamProject_Notebook.ipynb` Jupyter notebooks used for data exploration, model training, and analysis.
 - `images/:` Images used in the notebook.
@@ -45,9 +41,13 @@ To carry out all the objectives for this repo, the following necessary dependenc
 - `requirements.txt:` Files for recreating the project's environment.
 - `shapefiles/:` Shapefiles that are part of the Natural Earth dataset, used in the project to perform spatial operations for the countries and areas in the dataset.
 
- 
+## 4. Repository Structure <a class="anchor" id="packages"></a>
 
-## 4. Environment <a class="anchor" id="environment"></a>
+ To carry out all the objectives for this repo, the following necessary dependencies were loaded:
++ `Pandas 2.2.2` and `Numpy 1.26`
++ `Matplotlib 3.8.4`
+
+## 5. Environment <a class="anchor" id="environment"></a>
 
 It's highly recommended to use a virtual environment for your projects, there are many ways to do this; we've outlined one such method below. Make sure to regularly update this section. This way, anyone who clones your repository will know exactly what steps to follow to prepare the necessary environment. The instructions provided here should enable a person to clone your repo and quickly get started.
 
