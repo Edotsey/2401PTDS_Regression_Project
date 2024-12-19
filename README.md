@@ -57,6 +57,129 @@ The dataset utilized in this project comprises historical data on insurance clai
 | **auto_year**                   | Manufacturing year of the insured vehicle.                                                                         |
 | **fraud_reported**              | Whether fraud was reported in the claim.                                                                             |
 
+<table>
+  <thead>
+    <tr>
+      <th><small><b>Feature</b></small></th>
+      <th><small><b>Definition</b></small></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><small>months_as_customer</small></td>
+      <td><small>Number of months the customer has been with the insurance company.</small></td>
+    </tr>
+    <tr>
+      <td><small>age</small></td>
+      <td><small>Age of the insured person, used for risk assessment.</small></td>
+    </tr>
+    <tr>
+      <td><small>policy_number</small></td>
+      <td><small>Unique identifier for the insurance policy.</small></td>
+    </tr>
+    <tr>
+      <td><small>policy_bind_date</small></td>
+      <td><small>Date when the policy was activated.</small></td>
+    </tr>
+    <tr>
+      <td><small>policy_state</small></td>
+      <td><small>State or region where the policy was issued.</small></td>
+    </tr>
+    <tr>
+      <td><small>policy_csl</small></td>
+      <td><small>Maximum combined coverage for bodily injury and property damage.</small></td>
+    </tr>
+    <tr>
+      <td><small>policy_deductable</small></td>
+      <td><small>Amount the policyholder pays out-of-pocket before insurance covers the claim.</small></td>
+    </tr>
+    <tr>
+      <td><small>policy_annual_premium</small></td>
+      <td><small>Annual cost of the insurance policy.</small></td>
+    </tr>
+    <tr>
+      <td><small>umbrella_limit</small></td>
+      <td><small>Limit of additional liability coverage beyond standard policies.</small></td>
+    </tr>
+    <tr>
+      <td><small>insured_zip</small></td>
+      <td><small>ZIP code of the insured person's address.</small></td>
+    </tr>
+    <tr>
+      <td><small>insured_sex</small></td>
+      <td><small>Gender of the insured person.</small></td>
+    </tr>
+    <tr>
+      <td><small>insured_education_level</small></td>
+      <td><small>Highest level of education completed by the insured person.</small></td>
+    </tr>
+    <tr>
+      <td><small>insured_occupation</small></td>
+      <td><small>Occupation of the insured person, used for risk assessment.</small></td>
+    </tr>
+    <tr>
+      <td><small>insured_hobbies</small></td>
+      <td><small>Hobbies of the insured, which can affect risk.</small></td>
+    </tr>
+    <tr>
+      <td><small>insured_relationship</small></td>
+      <td><small>Relationship status of the insured.</small></td>
+    </tr>
+    <tr>
+      <td><small>capital-gains</small></td>
+      <td><small>Profit from the sale of investments.</small></td>
+    </tr>
+    <tr>
+      <td><small>capital-loss</small></td>
+      <td><small>Loss from the sale of investments.</small></td>
+    </tr>
+    <tr>
+      <td><small>incident_date</small></td>
+      <td><small>Date of the incident (e.g., accident).</small></td>
+    </tr>
+    <tr>
+      <td><small>incident_type</small></td>
+      <td><small>Type of incident (e.g., collision, theft).</small></td>
+    </tr>
+    <tr>
+      <td><small>collision_type</small></td>
+      <td><small>Type of collision in the accident.</small></td>
+    </tr>
+    <tr>
+      <td><small>incident_severity</small></td>
+      <td><small>Severity of the incident (e.g., minor, severe).</small></td>
+    </tr>
+    <tr>
+      <td><small>authorities_contacted</small></td>
+      <td><small>Authorities contacted (e.g., police, fire department).</small></td>
+    </tr>
+    <tr>
+      <td><small>incident_state</small></td>
+      <td><small>State or region where the incident occurred.</small></td>
+    </tr>
+    <tr>
+      <td><small>incident_city</small></td>
+      <td><small>City where the incident took place.</small></td>
+    </tr>
+    <tr>
+      <td><small>incident_location</small></td>
+      <td><small>Specific location of the incident.</small></td>
+    </tr>
+    <tr>
+      <td><small>incident_hour_of_the_day</small></td>
+      <td><small>Time of day the incident occurred.</small></td>
+    </tr>
+    <tr>
+      <td><small>number_of_vehicles_involved</small></td>
+      <td><small>Number of vehicles involved in the incident.</small></td>
+    </tr>
+    <tr>
+      <td><small>property_damage</small></td>
+      <td><small>Whether property damage occurred in the incident.</small></td>
+    </tr>
+    <tr>
+      <td><small>bodily_injuries</small></td>
+      <td><small>Whether there were bodily injuries in
 
 ## 3. Repository Structure <a class="anchor" id="packages"></a>
 
