@@ -15,29 +15,47 @@ In the insurance industry, precise prediction of claim probabilities is vital fo
 The dataset utilized in this project comprises historical data on insurance claims, encompassing a variety of information about the policyholders, their demographics, past claim history, and other pertinent features. The dataset is structured to facilitate predictive modeling tasks aimed at accurately identifying the likelihood of future insurance claims. The data utilized in this exercise was obtained from Kaggle, under the dataset titled "Insurance Claim Analysis (Demographic and Health)". Access the dataset [here](https://www.kaggle.com/datasets/thedevastator/insurance-claim-analysis-demographic-and-health/data).
 
 **Dataset Features:**
-| **Feature**                    | **Definition**                                                                                                                                                          |
-|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **months_as_customer**          | The number of months a customer has been with the insurance company, indicating customer loyalty and duration of coverage.                                                |
-| **age**                          | The age of the insured person, a critical factor in risk assessment for calculating premiums.                                                                          |
-| **policy_number**               | A unique identifier for each insurance policy, used to track and reference the specific insurance contract.                                                             |
-| **policy_bind_date**            | The date when the insurance policy was activated or "bound."                                                                                                            |
-| **policy_state**                | The state or region where the insurance policy was issued, which can influence premiums due to local regulations and risk factors.                                        |
-| **policy_csl**                  | The maximum combined coverage for bodily injury and property damage in a single accident, expressed as a single limit rather than separate limits.                       |
-| **policy_deductable**           | The amount the policyholder must pay out-of-pocket before the insurance covers the rest of the claim.                                                                  |
-| **policy_annual_premium**       | The total amount paid by the insured annually for the insurance policy.                                                                                               |
-| **umbrella_limit**              | The limit of an umbrella policy, which provides additional liability coverage beyond standard auto or home insurance.                                                   |
-| **insured_zip**                 | The ZIP code of the insured person's address, which can influence premiums based on geographic location.                                                                |
-| **insured_sex**                 | The gender of the insured person, which can sometimes influence risk and premium pricing.                                                                               |
-| **insured_education_level**     | The highest level of education completed by the insured person, which can be used to assess risk and potential for claims.                                               |
-| **insured_occupation**          | The occupation of the insured person, influencing risk assessment based on job-related factors.                                                                       |
-| **insured_hobbies**             | The hobbies or activities of the insured person, which can impact risk, particularly if they involve higher-risk activities.                                              |
-| **insured_relationship**        | The relationship status of the insured person, which could affect risk and premiums.                                                                                   |
-| **capital-gains**               | The profit made from the sale of assets or investments, providing insight into the insured person’s financial standing.                                                  |
-| **capital-loss**                | The loss incurred from the sale of assets or investments, which can reflect the financial status of the insured person.                                                 |
-| **incident_date**               | The date the incident (such as an accident) occurred, helping to categorize and assess risk based on timing.                                                           |
-| **incident_type**               | The type of incident (e.g., collision, theft, vandalism), used to categorize the nature of the claim.                                                                  |
-| **collision_type**              | The type of collision that occurred in an accident, such as rear-end or side-impact.                                                                                   |
-| **incident_severity**           | The severity of the incident, typically categorized as minor, moderate, or severe, determining the potential cost of 
+| **Feature**                    | **Definition**                                                                                                     |
+|---------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| **months_as_customer**          | Number of months the customer has been with the insurance company.                                                  |
+| **age**                          | Age of the insured person, used for risk assessment.                                                                |
+| **policy_number**               | Unique identifier for the insurance policy.                                                                         |
+| **policy_bind_date**            | Date when the policy was activated.                                                                                  |
+| **policy_state**                | State or region where the policy was issued.                                                                         |
+| **policy_csl**                  | Maximum combined coverage for bodily injury and property damage.                                                    |
+| **policy_deductable**           | Amount the policyholder pays out-of-pocket before insurance covers the claim.                                        |
+| **policy_annual_premium**       | Annual cost of the insurance policy.                                                                                |
+| **umbrella_limit**              | Limit of additional liability coverage beyond standard policies.                                                   |
+| **insured_zip**                 | ZIP code of the insured person's address.                                                                           |
+| **insured_sex**                 | Gender of the insured person.                                                                                       |
+| **insured_education_level**     | Highest level of education completed by the insured person.                                                         |
+| **insured_occupation**          | Occupation of the insured person, used for risk assessment.                                                         |
+| **insured_hobbies**             | Hobbies of the insured, which can affect risk.                                                                      |
+| **insured_relationship**        | Relationship status of the insured.                                                                                 |
+| **capital-gains**               | Profit from the sale of investments.                                                                                |
+| **capital-loss**                | Loss from the sale of investments.                                                                                  |
+| **incident_date**               | Date of the incident (e.g., accident).                                                                              |
+| **incident_type**               | Type of incident (e.g., collision, theft).                                                                         |
+| **collision_type**              | Type of collision in the accident.                                                                                  |
+| **incident_severity**           | Severity of the incident (e.g., minor, severe).                                                                     |
+| **authorities_contacted**       | Authorities contacted (e.g., police, fire department).                                                              |
+| **incident_state**              | State or region where the incident occurred.                                                                        |
+| **incident_city**               | City where the incident took place.                                                                                 |
+| **incident_location**           | Specific location of the incident.                                                                                  |
+| **incident_hour_of_the_day**    | Time of day the incident occurred.                                                                                  |
+| **number_of_vehicles_involved** | Number of vehicles involved in the incident.                                                                        |
+| **property_damage**             | Whether property damage occurred in the incident.                                                                   |
+| **bodily_injuries**             | Whether there were bodily injuries in the incident.                                                                 |
+| **witnesses**                   | Number of witnesses to the incident.                                                                                |
+| **police_report_available**     | Whether a police report is available for the incident.                                                              |
+| **total_claim_amount**          | Total monetary value of the claim.                                                                                  |
+| **injury_claim**                | Portion of the claim related to injuries.                                                                           |
+| **property_claim**              | Portion of the claim related to property damage.                                                                   |
+| **vehicle_claim**               | Portion of the claim related to vehicle damage.                                                                    |
+| **auto_make**                   | Make of the insured vehicle.                                                                                        |
+| **auto_model**                  | Model of the insured vehicle.                                                                                       |
+| **auto_year**                   | Manufacturing year of the insured vehicle.                                                                         |
+| **fraud_reported**              | Whether fraud was reported in the claim.                                                                             |
 
 
 ## 3. Repository Structure <a class="anchor" id="packages"></a>
