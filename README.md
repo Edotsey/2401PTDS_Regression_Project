@@ -1,104 +1,88 @@
-# 2401PTDS_Regression_Project
+# Insurance claims project
 
-![](https://img.shields.io/badge/Python-3776AB.svg?style=for-the-badge&logo=Python&logoColor=white)
-
-<div id="main image" align="center">
-  <img src="https://github.com/marcmarais/2401FTDS_Regression_Project/blob/main/agri_image.png" width="450" height="300" alt=""/>
-</div>
 
 ## Table of contents
 * [1. Project Overview](#project-description)
 * [2. Dataset](#dataset)
-* [3. Packages](#packages)
-* [4. Environment](#environment)
-* [5. Team Members](#team-members)
-
+* [3. Repository Structure](#Repository-Structure)
+* [4. Packages](#Packages)
+* [5. Environment](#Environment)
+  
 ## 1. Project Overview <a class="anchor" id="project-description"></a>
-Your team of environmental consultants and data scientists are tasked by a coalition of agricultural stakeholders to analyse and predict the effect of CO2 emissions on climate change from the agri-food sector. The stakeholders include policymakers, agricultural businesses, and environmental organisations. Your project aims to understand the impact of agricultural activities on climate change and develop strategies for sustainable practices. Utilising a comprehensive dataset compiled from the Food and Agriculture Organization (FAO) and the Intergovernmental Panel on Climate Change (IPCC), you will explore various emission sources, perform regression analysis to predict temperature variations, and offer actionable insights for the stakeholders.
-
-By the end of this project, you will have a thorough understanding of the impact of agricultural activities on CO2 emissions and climate change. Your findings and recommendations will contribute to the ongoing efforts to promote sustainability within the agri-food sector, providing valuable insights for the stakeholders involved in this initiative.
+In the insurance industry, precise prediction of claim probabilities is vital for effective risk assessment and accurate policy pricing. However, a significant challenge arises from the frequent class imbalance in insurance claims datasets, where non-claim instances vastly outnumber actual claims. This imbalance complicates predictive modeling, leading to biased outcomes that favor the majority class and diminish the performance of models on the minority class. Addressing this issue is crucial for improving the accuracy and reliability of claims predictions, which are essential for better risk management and policy development.
 
 ## 2. Dataset <a class="anchor" id="dataset"></a>
-Emissions from the agri-food sector play a crucial role in climate change, as they represent a significant share of global annual emissions. The dataset highlights the substantial contribution of the various sources of emissions. Therefore, it is essential to understand and address the environmental impact of the agri-food industry to mitigate climate change and promote sustainable practices within this sector.
+The dataset utilized in this project comprises historical data on insurance claims, encompassing a variety of information about the policyholders, their demographics, past claim history, and other pertinent features. The dataset is structured to facilitate predictive modeling tasks aimed at accurately identifying the likelihood of future insurance claims. The data utilized in this exercise was obtained from Kaggle, under the dataset titled "Insurance Claim Analysis (Demographic and Health)". Access the dataset [here](https://www.kaggle.com/datasets/thedevastator/insurance-claim-analysis-demographic-and-health/data).
 
 **Dataset Features:**
-- Savanna fires: Emissions from fires in savanna ecosystems.
-- Forest fires: Emissions from fires in forested areas.
-- Crop Residues: Emissions from burning or decomposing leftover plant material after crop harvesting.
-- Rice Cultivation: Emissions from methane released during rice cultivation.
-- Drained organic soils (CO2): Emissions from carbon dioxide released when draining organic soils.
-- Pesticides Manufacturing: Emissions from the production of pesticides.
-- Food Transport: Emissions from transporting food products.
-- Forestland: Land covered by forests.
-- Net Forest conversion: Change in forest area due to deforestation and afforestation.
-- Food Household Consumption: Emissions from food consumption at the household level.
-- Food Retail: Emissions from the operation of retail establishments selling food.
-- On-farm Electricity Use: Electricity consumption on farms.
-- Food Packaging: Emissions from the production and disposal of food packaging materials.
-- Agrifood Systems Waste Disposal: Emissions from waste disposal in the agrifood system.
-- Food Processing: Emissions from processing food products.
-- Fertilizers Manufacturing: Emissions from the production of fertilizers.
-- IPPU: Emissions from industrial processes and product use.
-- Manure applied to Soils: Emissions from applying animal manure to agricultural soils.
-- Manure left on Pasture: Emissions from animal manure on pasture or grazing land.
-- Manure Management: Emissions from managing and treating animal manure.
-- Fires in organic soils: Emissions from fires in organic soils.
-- Fires in humid tropical forests: Emissions from fires in humid tropical forests.
-- On-farm energy use: Energy consumption on farms.
-- Rural population: Number of people living in rural areas.
-- Urban population: Number of people living in urban areas.
-- Total Population - Male: Total number of male individuals in the population.
-- Total Population - Female: Total number of female individuals in the population.
-- total_emission: Total greenhouse gas emissions from various sources.
-- Average Temperature °C: The average increasing of temperature (by year) in degrees Celsius,
- 
+| **Feature**                    | **Definition**                                                                                                     |
+|---------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| **months_as_customer**          | Number of months the customer has been with the insurance company.                                                  |
+| **age**                          | Age of the insured person, used for risk assessment.                                                                |
+| **policy_number**               | Unique identifier for the insurance policy.                                                                         |
+| **policy_bind_date**            | Date when the policy was activated.                                                                                  |
+| **policy_state**                | State or region where the policy was issued.                                                                         |
+| **policy_csl**                  | Maximum combined coverage for bodily injury and property damage.                                                    |
+| **policy_deductable**           | Amount the policyholder pays out-of-pocket before insurance covers the claim.                                        |
+| **policy_annual_premium**       | Annual cost of the insurance policy.                                                                                |
+| **umbrella_limit**              | Limit of additional liability coverage beyond standard policies.                                                   |
+| **insured_zip**                 | ZIP code of the insured person's address.                                                                           |
+| **insured_sex**                 | Gender of the insured person.                                                                                       |
+| **insured_education_level**     | Highest level of education completed by the insured person.                                                         |
+| **insured_occupation**          | Occupation of the insured person, used for risk assessment.                                                         |
+| **insured_hobbies**             | Hobbies of the insured, which can affect risk.                                                                      |
+| **insured_relationship**        | Relationship status of the insured.                                                                                 |
+| **capital-gains**               | Profit from the sale of investments.                                                                                |
+| **capital-loss**                | Loss from the sale of investments.                                                                                  |
+| **incident_date**               | Date of the incident (e.g., accident).                                                                              |
+| **incident_type**               | Type of incident (e.g., collision, theft).                                                                         |
+| **collision_type**              | Type of collision in the accident.                                                                                  |
+| **incident_severity**           | Severity of the incident (e.g., minor, severe).                                                                     |
+| **authorities_contacted**       | Authorities contacted (e.g., police, fire department).                                                              |
+| **incident_state**              | State or region where the incident occurred.                                                                        |
+| **incident_city**               | City where the incident took place.                                                                                 |
+| **incident_location**           | Specific location of the incident.                                                                                  |
+| **incident_hour_of_the_day**    | Time of day the incident occurred.                                                                                  |
+| **number_of_vehicles_involved** | Number of vehicles involved in the incident.                                                                        |
+| **property_damage**             | Whether property damage occurred in the incident.                                                                   |
+| **bodily_injuries**             | Whether there were bodily injuries in the incident.                                                                 |
+| **witnesses**                   | Number of witnesses to the incident.                                                                                |
+| **police_report_available**     | Whether a police report is available for the incident.                                                              |
+| **total_claim_amount**          | Total monetary value of the claim.                                                                                  |
+| **injury_claim**                | Portion of the claim related to injuries.                                                                           |
+| **property_claim**              | Portion of the claim related to property damage.                                                                   |
+| **vehicle_claim**               | Portion of the claim related to vehicle damage.                                                                    |
+| **auto_make**                   | Make of the insured vehicle.                                                                                        |
+| **auto_model**                  | Model of the insured vehicle.                                                                                       |
+| **auto_year**                   | Manufacturing year of the insured vehicle.                                                                         |
+| **fraud_reported**              | Whether fraud was reported in the claim.                                                                             |
 
-CO2 is recorded in kilotonnes (kt): 1 kt represents 1000 kg of CO2.
+## 3. Repository Structure <a class="anchor" id="packages"></a>
 
-The feature "Average Temperature C°", represents the average yearly temperature increase. For example, if it is 0.12, it means that the temperature in that specific location increased by 0.12 degrees Celsius.
+- `Insurance claims data.csv:` Contains the dataset file.
+- `QCTO---Workplace-Module ipynb` Jupyter notebooks used for data exploration, model training, and analysis.
+- `images/:` Images used in the notebook.
+- `README.md:` Project documentation.
+- `requirements.txt:` Files for recreating the project's environment.
+- `shapefiles/:` Shapefiles that are part of the Natural Earth dataset, used in the project to perform spatial operations for the countries and areas in the dataset.
 
-Forestland is the only feature that exhibits negative emissions due to its role as a carbon sink. Through photosynthesis, forests absorb and store carbon dioxide, effectively removing it from the atmosphere. Sustainable forest management, along with afforestation and reforestation efforts, further contribute to negative emissions by increasing carbon sequestration capacity.
-
-## 3. Packages <a class="anchor" id="packages"></a>
+## 4. Packages <a class="anchor" id="packages"></a>
 
 To carry out all the objectives for this repo, the following necessary dependencies were loaded:
 + `Pandas 2.2.2` and `Numpy 1.26`
 + `Matplotlib 3.8.4`
- 
++ `Seaborn 0.13.2`
++ `Scikit-learn 1.5.1`
++ `GeoPandas 1.0.1`
++ `Power BI`
 
-## 4. Environment <a class="anchor" id="environment"></a>
-
-It's highly recommended to use a virtual environment for your projects, there are many ways to do this; we've outlined one such method below. Make sure to regularly update this section. This way, anyone who clones your repository will know exactly what steps to follow to prepare the necessary environment. The instructions provided here should enable a person to clone your repo and quickly get started.
-
-### Create the new evironment - you only need to do this once
-
-```bash
-# create the conda environment
-conda create --name <env>
-```
-
-### This is how you activate the virtual environment in a terminal and install the project dependencies
+## 5. Environment <a class="anchor" id="environment"></a>
 
 ```bash
 # activate the virtual environment
-conda activate <env>
+conda activate <QCTO---Workplace-Module>
 # install the pip package
 conda install pip
 # install the requirements for this project
 pip install -r requirements.txt
 ```
-
-## 5. Team Members<a class="anchor" id="team-members"></a>
-
-| Name                                                                                        |  Email              
-|---------------------------------------------------------------------------------------------|--------------------             
-| [Jana Liebenberg-Fouche](https://github.com/Jana-Liebenberg)                                | jliebenberg-fouche@sandtech.com
-| [Edmund Dotsey](https://github.com/Edotsey)                                                 | edotsey@sandtech.com
-| [Farayi Myambo](https://github.com/Farayi-Explore)                                          | fmyambo@sandtech.com
-
-
-
-#### Additional Resources to create a README file:
-- [Make a README](https://www.makeareadme.com/)
-- [GitHub Docs](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)
-- [FreeCodeCamp](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
